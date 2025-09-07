@@ -1,0 +1,1 @@
+We collect email, phone, and booking info. We use it to provide services. We share with third parties like Google Play for analytics. Contact us for questions.

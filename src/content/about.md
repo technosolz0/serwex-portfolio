@@ -1,0 +1,1 @@
+Our mission is to make home services simple and reliable. Serwex connects users with trusted vendors. We started in 2023 to help people book services fast. Our team is small but passionate. Contact us for more info.

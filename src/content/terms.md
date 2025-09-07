@@ -1,0 +1,1 @@
+Use our apps responsibly. Bookings and payments are handled in-app. No refunds for cancellations after start. We own the content. Limited liability.
