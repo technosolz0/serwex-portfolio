@@ -23,7 +23,7 @@ const AppMockup: React.FC<AppMockupProps> = ({ screenshots }) => {
         exit={{ opacity: 0, x: -100 }}
         transition={{ duration: 0.5 }}
       >
-        <Image src={screenshots[currentIndex]} alt={`App screenshot ${currentIndex + 1}`} width={300} height={600} className="rounded-lg shadow-glow" />
+        <Image  src={screenshots[currentIndex]} alt={`App screenshot ${currentIndex + 1}`} width={300} height={600} className="rounded-lg shadow-glow" unoptimized   />
       </motion.div>
       <button onClick={handleNext} className="absolute right-0 text-3xl hover:text-accent">&gt;</button>
     </div>
