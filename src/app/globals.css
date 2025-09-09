@@ -1,3 +1,4 @@
+/* global.css or tailwind.css */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -5,9 +6,13 @@
 body {
   @apply bg-bg-light text-text-dark font-sans antialiased;
 }
+/* global.css or tailwind.css */
+@layer utilities {
+  .bg-bg-light {
+    background-color: #f7fafc; /* Replace with the correct backgroundLight value */
+  }
 
-.hero-bg {
-  background-image: url('/images/hero-bg.jpg'); /* Placeholder - replace with a vibrant, service-related image */
-  background-size: cover;
-  background-position: center;
+  .text-text-dark {
+    color: #2d3748; /* Replace with the correct textDark value */
+  }
 }

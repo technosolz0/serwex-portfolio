@@ -4,6 +4,7 @@ import SEO from '@/components/SEO';
 import FeatureCard from '@/components/FeatureCard';
 import AppMockup from '@/components/AppMockup';
 import { motion } from 'framer-motion';
+import './globals.css';
 
 export default function Home() {
   const jsonLd = {
