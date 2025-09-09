@@ -1,4 +1,6 @@
 // components/Header.tsx
+
+"use client";
 import Link from 'next/link';
 import Image from 'next/image';
 import { useState } from 'react';
@@ -21,7 +23,7 @@ const Header: React.FC = () => {
     >
       <nav className="container mx-auto px-4 py-4 flex justify-between items-center">
         <Link href="/">
-          <Image src="/images/logo.png" alt="Serwex Logo" width={120} height={40} className="hover:scale-105 transition-transform" /> {/* Added hover scale */}
+          <Image src="/images/logo.png" alt="Serwex Logo" width={120} height={40} className="hover:scale-105 transition-transform" unoptimized   /> {/* Added hover scale */}
         </Link>
         <div className="hidden md:flex space-x-6">
           <Link href="/" className="hover:text-primary transition-colors">Home</Link>

@@ -1,4 +1,5 @@
 // app/not-found.tsx
+'use client';
 import Link from 'next/link';
 import { motion } from 'framer-motion';
 
@@ -17,7 +18,7 @@ export default function NotFound() {
       >
         404
       </motion.h1>
-      <p className="text-xl mb-8">Page not found. Let's get you back home.</p>
+      <p className="text-xl mb-8">Page not found. Let&apos;s get you back home.</p>
       <Link href="/" className="bg-primary text-white px-6 py-3 rounded hover:bg-accent transition-colors shadow-glow">Go to Home</Link>
     </motion.div>
   );
