@@ -1,8 +1,10 @@
 // components/AppMockup.tsx
+
+'use client'; // 👈 Add this line at the very top
+
 import Image from 'next/image';
 import { motion } from 'framer-motion';
 import { useState } from 'react';
-
 interface AppMockupProps {
   screenshots: string[]; // Array of image paths
 }

@@ -1,4 +1,5 @@
 // app/page.tsx (Home Page)
+"use client"
 import SEO from '@/components/SEO';
 import FeatureCard from '@/components/FeatureCard';
 import AppMockup from '@/components/AppMockup';
@@ -102,8 +103,7 @@ export default function Home() {
             initial={{ scale: 0.9, opacity: 0 }}
             whileInView={{ scale: 1, opacity: 1 }}
             transition={{ duration: 0.5 }}
-          >
-            "Great app for booking services!" - Happy User
+          >&quot;Great app for booking services!&quot; - Happy User
           </motion.p>
         </div>
       </section>
