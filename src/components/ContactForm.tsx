@@ -37,7 +37,7 @@ const ContactForm: React.FC = () => {
       <select value={formData.appType} onChange={(e) => setFormData({...formData, appType: e.target.value})} className="w-full p-2 border rounded focus:outline-none focus:border-primary transition-colors" required>
         <option value="">Select App</option>
         <option value="Serwex">Serwex (Users)</option>
-        <option value="Serwex_Partner">Serwex_Partner (Vendors)</option>
+        <option value="Serwex Partner">Serwex Partner (Vendors)</option>
       </select>
       <textarea placeholder="Message" value={formData.message} onChange={(e) => setFormData({...formData, message: e.target.value})} className="w-full p-2 border rounded h-32 focus:outline-none focus:border-primary transition-colors" required />
       <button type="submit" className="bg-primary text-white px-4 py-2 rounded hover:bg-accent transition-colors shadow-soft">Send</button>

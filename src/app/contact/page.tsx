@@ -8,7 +8,7 @@ export default function Contact() {
     <>
       <SEO 
         title="Contact Us - Serwex" 
-        description="Get in touch with us for any questions about Serwex or Serwex_Partner." 
+        description="Get in touch with us for any questions about Serwex or Serwex Partner." 
       />
       <section className="py-12 bg-bg-light">
         <div className="container mx-auto px-4">

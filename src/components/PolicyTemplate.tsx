@@ -1,6 +1,4 @@
-// components/PolicyTemplate.tsx
-import ReactMarkdown from 'react-markdown';
-import { motion } from 'framer-motion';
+import { marked } from 'marked';
 
 interface PolicyTemplateProps {
   title: string;
@@ -8,16 +6,13 @@ interface PolicyTemplateProps {
 }
 
 const PolicyTemplate: React.FC<PolicyTemplateProps> = ({ title, content }) => {
+  const htmlContent = marked(content); // Convert markdown to HTML
+
   return (
-    <motion.article 
-      className="container mx-auto px-4 py-8"
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      transition={{ duration: 0.5 }}
-    >
-      <h1 className="text-3xl font-bold mb-4 text-center">{title}</h1>
-      <ReactMarkdown className="prose mx-auto prose-headings:text-primary prose-a:text-accent">{content}</ReactMarkdown> {/* Enhanced prose styling */}
-    </motion.article>
+    <div className="policy-container">
+      <h1>{title}</h1>
+      <div dangerouslySetInnerHTML={{ __html: htmlContent }} />
+    </div>
   );
 };
 

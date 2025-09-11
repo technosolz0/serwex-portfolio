@@ -35,31 +35,34 @@ The easiest way to deploy your Next.js app is to use the [Vercel Platform](https
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
 
-
-
 # Serwex Portfolio Website
 
-A Next.js site for promoting Serwex and Serwex_Partner apps.
+A Next.js site for promoting Serwex and Serwex Partner apps.
 
 ## Setup
+
 1. Clone repo.
 2. `npm install`
 3. Copy .env.local.example to .env.local and fill values.
 4. `npm run dev` for local server.
 
 ## Build & Start
+
 `npm run build`
 `npm run start`
 
 ## Deployment
+
 Deploy to Vercel: Connect GitHub repo, select Next.js preset.
 
 ## Customizations
+
 - Replace Play Store links in Header.tsx and pages.
 - Replace screenshots in /public/images/ with real app mockups.
-- Edit content in /content/*.md files - no code changes needed.
+- Edit content in /content/\*.md files - no code changes needed.
 - For analytics, add script in SEO.tsx and handle consent.
 
 ## Notes
+
 - Site is SEO-ready with metadata on each page.
 - Contact form uses Nodemailer; configure SMTP or use alternative.

@@ -15,4 +15,42 @@ body {
   .text-text-dark {
     color: #2d3748; /* Replace with the correct textDark value */
   }
+
+  .policy-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+.policy-container h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+.policy-container p {
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+
+@layer base {
+  .prose {
+    max-width: 100%;
+    @apply text-gray-800;
+  }
+  .prose h2 {
+    @apply text-2xl font-semibold mt-8 mb-4 text-primary;
+  }
+  .prose p {
+    @apply mb-4 leading-relaxed;
+  }
+  .prose li {
+    @apply mb-2;
+  }
+  .prose a {
+    @apply text-blue-600 hover:underline;
+  }
+}
+
+:root {
+  --primary: #1D4ED8; /* Tailwind blue-700 */
+}
 }

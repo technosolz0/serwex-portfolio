@@ -11,9 +11,8 @@ export default function UserGuide() {
   return (
     <>
       <SEO 
-        title="User Guide for Serwex" 
-        description="Step-by-step guide to using the Serwex app for booking services." 
-      />
+        title="User Guide for Serwex"
+        description="Step-by-step guide to using the Serwex app for booking services." canonicalUrl={''}      />
       <section className="py-12">
         <div className="container mx-auto px-4">
           <motion.h1 

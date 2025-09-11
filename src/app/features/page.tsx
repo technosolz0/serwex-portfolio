@@ -22,7 +22,7 @@ export default function Features() {
   return (
     <>
       <SEO 
-        title="Features of Serwex and Serwex_Partner" 
+        title="Features of Serwex and Serwex Partner" 
         description="Discover all features for users and vendors in our home services apps." 
       />
       <section className="py-12">
@@ -54,7 +54,7 @@ export default function Features() {
             whileInView={{ y: 0, opacity: 1 }}
             viewport={{ once: true }}
           >
-            For Vendors (Serwex_Partner)
+            For Vendors (Serwex Partner)
           </motion.h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {vendorFeatures.map((feat, idx) => (

@@ -1,27 +1,22 @@
-"use client";
-
-import { usePathname } from "next/navigation";
-import Script from "next/script";
+import Script from 'next/script';
 
 interface SEOProps {
   title: string;
   description: string;
   image?: string;
+  canonicalUrl: string;
   jsonLd?: object;
 }
 
 const SEO: React.FC<SEOProps> = ({
   title,
   description,
-  image = "/images/og-image.jpg",
+  image = '/images/og-image.jpg',
+  canonicalUrl,
   jsonLd,
 }) => {
-  const pathname = usePathname();
-  const canonicalUrl = `https://yourdomain.com${pathname}`; // Replace with actual domain
-
   return (
     <>
-      {/* Standard SEO tags */}
       <title>{title}</title>
       <meta name="description" content={description} />
       <link rel="canonical" href={canonicalUrl} />
@@ -50,9 +45,6 @@ const SEO: React.FC<SEOProps> = ({
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
       )}
-
-      {/* Example: Analytics placeholder (GDPR consent required) */}
-      {/* <Script src="https://your-analytics-script.js" strategy="afterInteractive" /> */}
     </>
   );
 };
