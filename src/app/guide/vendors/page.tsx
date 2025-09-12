@@ -21,7 +21,7 @@ export default async function VendorGuide() {
     return notFound();
   }
 
-  const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'http://localhost:3000';
+  const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'http://localhost:3001';
   const jsonLd = {
     '@context': 'https://schema.org',
     '@type': 'Organization',

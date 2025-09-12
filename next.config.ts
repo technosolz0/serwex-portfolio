@@ -3,9 +3,9 @@ const nextConfig = {
   experimental: {
     // 👇 Allow LAN/devices in your network to access assets
     allowedDevOrigins: [
-      "http://192.168.43.227:3000", // your LAN IP with port
-      "http://localhost:3000", 
-      "http://192.168.1.18':3000", 
+      "http://192.168.43.227:3001", // your LAN IP with port
+      "http://localhost:3001", 
+      "http://192.168.1.18':3001", 
       '192.168.1.18'     // keep localhost too
     ],
   },
