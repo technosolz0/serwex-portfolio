@@ -22,9 +22,8 @@ export default function Features() {
   return (
     <>
       <SEO 
-        title="Features of Serwex and Serwex Partner" 
-        description="Discover all features for users and vendors in our home services apps." 
-      />
+        title="Features of Serwex and Serwex Partner"
+        description="Discover all features for users and vendors in our home services apps." canonicalUrl={''}      />
       <section className="py-12">
         <div className="container mx-auto px-4">
           <motion.h1 

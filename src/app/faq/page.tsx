@@ -15,9 +15,8 @@ export default function FAQ() {
   return (
     <>
       <SEO 
-        title="FAQ - Serwex" 
-        description="Answers to common questions about our apps." 
-      />
+        title="FAQ - Serwex"
+        description="Answers to common questions about our apps." canonicalUrl={''}      />
       <section className="py-12">
         <div className="container mx-auto px-4">
           <motion.h1 

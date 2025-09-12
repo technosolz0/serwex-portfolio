@@ -7,9 +7,8 @@ export default function Contact() {
   return (
     <>
       <SEO 
-        title="Contact Us - Serwex" 
-        description="Get in touch with us for any questions about Serwex or Serwex Partner." 
-      />
+        title="Contact Us - Serwex"
+        description="Get in touch with us for any questions about Serwex or Serwex Partner." canonicalUrl={''}      />
       <section className="py-12 bg-bg-light">
         <div className="container mx-auto px-4">
           <motion.h1 
