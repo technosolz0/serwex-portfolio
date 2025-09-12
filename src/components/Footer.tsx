@@ -19,12 +19,12 @@ const Footer: React.FC = () => {
   return (
     <footer className="bg-gradient-accent text-white py-8">
       <div className="container mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-8">
-        <motion.div
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          transition={{ delay: 0.2 }}
-          aria-label="About Serwex"
-        >
+       <motion.div
+  initial={{ opacity: 0 }}
+  whileInView={{ opacity: 1 }}
+  viewport={{ once: true }}
+  transition={{ delay: 0.6 }}
+>
           <h4 className="font-bold mb-4">Serwex</h4>
           <p>Book trusted home services easily.</p>
         </motion.div>
@@ -54,14 +54,16 @@ const Footer: React.FC = () => {
         >
           <h4 className="font-bold mb-4">Newsletter (Optional)</h4>
           <form onSubmit={handleSubscribe} className="flex flex-col items-start">
-            <input
-              type="email"
-              value={email}
-              onChange={(e) => setEmail(e.target.value)}
-              placeholder="Your email"
-              className="w-full p-2 mb-2 text-text-dark rounded border border-tertiary focus:outline-none focus:border-accent"
-              aria-label="Email Address"
-            />
+           <input
+  type="email"
+  value={email ?? ""}
+  onChange={(e) => setEmail(e.target.value)}
+  placeholder="Your email"
+  className="w-full p-2 mb-2 text-text-dark rounded border border-tertiary focus:outline-none focus:border-accent"
+  aria-label="Email Address"
+  autoComplete="off" // sometimes reduces extension interference
+/>
+
             <button
               type="submit"
               className="bg-primary text-white px-4 py-2 rounded hover:bg-accent transition-colors shadow-soft"

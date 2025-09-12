@@ -1,4 +1,5 @@
-// app/contact/page.tsx
+"use client"; // 👈 important for using framer-motion
+
 import SEO from '@/components/SEO';
 import ContactForm from '@/components/ContactForm';
 import { motion } from 'framer-motion';
@@ -6,12 +7,14 @@ import { motion } from 'framer-motion';
 export default function Contact() {
   return (
     <>
-      <SEO 
+      <SEO
         title="Contact Us - Serwex"
-        description="Get in touch with us for any questions about Serwex or Serwex Partner." canonicalUrl={''}      />
+        description="Get in touch with us for any questions about Serwex or Serwex Partner."
+        canonicalUrl="https://yourdomain.com/contact"
+      />
       <section className="py-12 bg-bg-light">
         <div className="container mx-auto px-4">
-          <motion.h1 
+          <motion.h1
             className="text-3xl font-bold text-center mb-8"
             initial={{ scale: 0.9, opacity: 0 }}
             animate={{ scale: 1, opacity: 1 }}
@@ -19,9 +22,10 @@ export default function Contact() {
           >
             Contact Us
           </motion.h1>
+
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <ContactForm />
-            <motion.div 
+            <motion.div
               className="space-y-4"
               initial={{ x: 50, opacity: 0 }}
               animate={{ x: 0, opacity: 1 }}

@@ -5,7 +5,7 @@ import path from 'path';
 
 export default function Terms() {
   // Load terms content from Markdown file
-  const content = fs.readFileSync(path.join(process.cwd(), 'content/terms.md'), 'utf8');
+  const content = fs.readFileSync(path.join(process.cwd(), 'src/content/terms.md'), 'utf8');
 
   // JSON-LD for Organization (rich results)
   const jsonLd = {
@@ -22,7 +22,7 @@ export default function Terms() {
         title="Terms & Conditions - Serwex"
         description="Our terms and conditions for using the Serwex website and apps."
         image="/images/og-image.jpg" // Replace with actual image
-        jsonLd={jsonLd} canonicalUrl={''}      />
+        jsonLd={jsonLd} canonicalUrl={'https://yourdomain.com/terms'}      />
       <PolicyTemplate title="Terms & Conditions" content={content} />
     </>
   );
