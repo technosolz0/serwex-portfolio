@@ -11,9 +11,8 @@ export default function About() {
   return (
     <>
       <SEO 
-        title="About Serwex" 
-        description="Learn about our mission to make home services easy." 
-      />
+        title="About Serwex"
+        description="Learn about our mission to make home services easy." canonicalUrl={''}      />
       <section className="py-12">
         <div className="container mx-auto px-4">
           <motion.h1 
