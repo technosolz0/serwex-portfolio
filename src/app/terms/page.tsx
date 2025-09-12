@@ -22,8 +22,7 @@ export default function Terms() {
         title="Terms & Conditions - Serwex"
         description="Our terms and conditions for using the Serwex website and apps."
         image="/images/og-image.jpg" // Replace with actual image
-        jsonLd={jsonLd}
-      />
+        jsonLd={jsonLd} canonicalUrl={''}      />
       <PolicyTemplate title="Terms & Conditions" content={content} />
     </>
   );
