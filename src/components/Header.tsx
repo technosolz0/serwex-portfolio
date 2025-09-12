@@ -26,7 +26,7 @@ const Header: React.FC = () => {
           <Image src="/images/logo.png" alt="Serwex Logo" width={120} height={40} className="hover:scale-105 transition-transform" unoptimized   /> {/* Added hover scale */}
         </Link>
         <div className="hidden md:flex space-x-6">
-          <Link href="/" className="hover:text-primary transition-colors">Home</Link>
+          <Link href="" className="hover:text-primary transition-colors">Home</Link>
           <Link href="/features" className="hover:text-primary transition-colors">Features</Link>
           <Link href="/guide/users" className="hover:text-primary transition-colors">User Guide</Link>
           <Link href="/guide/vendors" className="hover:text-primary transition-colors">Vendor Guide</Link>
