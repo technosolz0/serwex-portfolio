@@ -3,7 +3,7 @@
 import { motion } from 'framer-motion';
 import FAQAccordion from '@/components/FAQAccordion';
 
-export default function FAQClient({ items }: { items: { question: string; answer: string }[] }) {
+export default function FAQClient({ items }: { items: { question: string; answer: string }[]   }) {
   return (
     <section className="py-12">
       <div className="container mx-auto px-4">
