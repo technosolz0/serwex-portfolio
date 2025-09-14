@@ -2,7 +2,6 @@
 import SEO from '@/components/SEO';
 import fs from 'fs';
 import path from 'path';
-import ReactMarkdown from 'react-markdown';
 import UserGuideContent from './UserGuideContent';
 
 export default function UserGuide() {

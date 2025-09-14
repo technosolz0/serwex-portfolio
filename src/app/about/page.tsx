@@ -1,7 +1,5 @@
 import fs from "fs/promises";
 import path from "path";
-import ReactMarkdown from "react-markdown";
-import rehypeSanitize from "rehype-sanitize";
 import SEO from "@/components/SEO";
 import AboutClient from "./AboutClient"; // Client component
 
