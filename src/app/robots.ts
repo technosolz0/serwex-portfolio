@@ -8,6 +8,6 @@ export default function robots(): MetadataRoute.Robots {
       allow: '/',
       disallow: '/private/',
     },
-    sitemap: 'https://yourdomain.com/sitemap.xml',
+    sitemap: 'https://serwex.in/sitemap.xml',
   }
 }

@@ -10,7 +10,7 @@ export default function Contact() {
       <SEO
         title="Contact Us - Serwex"
         description="Get in touch with us for any questions about Serwex or Serwex Partner."
-        canonicalUrl="https://yourdomain.com/contact"
+        canonicalUrl="https://serwex.in/contact"
       />
       <section className="py-12 bg-bg-light">
         <div className="container mx-auto px-4">

@@ -16,7 +16,7 @@ export default function UserGuide() {
       <SEO
         title="User Guide for Serwex"
         description="Step-by-step guide to using the Serwex app for booking services."
-        canonicalUrl="https://yourdomain.com/guide/users"
+        canonicalUrl="https://serwex.in/guide/users"
       />
       <UserGuideContent content={content} />
     </>

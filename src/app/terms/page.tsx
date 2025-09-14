@@ -12,7 +12,7 @@ export default function Terms() {
     '@context': 'https://schema.org',
     '@type': 'Organization',
     name: 'Serwex',
-    url: 'https://yourdomain.com', // Replace with actual domain
+    url: 'https://serwex.in', // Replace with actual domain
     description: 'Serwex connects users with trusted home service providers.',
   };
 
@@ -22,7 +22,7 @@ export default function Terms() {
         title="Terms & Conditions - Serwex"
         description="Our terms and conditions for using the Serwex website and apps."
         image="/images/og-image.jpg" // Replace with actual image
-        jsonLd={jsonLd} canonicalUrl={'https://yourdomain.com/terms'}      />
+        jsonLd={jsonLd} canonicalUrl={'https://serwex.in/terms'}      />
       <PolicyTemplate title="Terms & Conditions" content={content} />
     </>
   );

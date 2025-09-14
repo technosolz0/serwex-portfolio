@@ -43,7 +43,7 @@ export default function Features() {
       <SEO
         title="Features of Serwex and Serwex Partner"
         description="Discover all features for users and vendors in our home services apps."
-        canonicalUrl="https://yourdomain.com/features"
+        canonicalUrl="https://serwex.in/features"
       />
       <FeaturesClient userFeatures={userFeatures} vendorFeatures={vendorFeatures} />
     </>

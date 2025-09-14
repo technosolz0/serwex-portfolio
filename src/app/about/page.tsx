@@ -21,7 +21,7 @@ export default async function AboutPage() {
       <SEO
         title="About Serwex"
         description="Learn about our mission to make home services easy."
-        canonicalUrl="https://yourdomain.com/about"
+        canonicalUrl="https://serwex.in/about"
       />
       <AboutClient content={content} />
     </>

@@ -1,3 +1,4 @@
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -13,12 +14,12 @@ body {
 
 main {
   flex: 1 0 auto;
-  @apply pt-20; /* Increased to account for fixed header height (~80px) */
+  @apply pt-20; /* Matches Header.tsx height (~64px + buffer) */
 }
 
 footer {
   flex-shrink: 0;
-  @apply w-full bg-gradient-accent text-white py-12; /* Increased padding for visibility */
+  @apply w-full bg-gradient-accent text-white py-12;
   position: relative;
   z-index: 10;
 }
@@ -26,23 +27,35 @@ footer {
 /* Utility layer */
 @layer utilities {
   .bg-bg-light {
-    background-color: #f7fafc; /* Light background */
+    background-color: #F9FAFB; /* Matches backgroundLight */
   }
 
   .text-text-dark {
-    color: #2d3748; /* Dark text */
+    color: #1F2937; /* Matches textDark */
   }
 
   .text-dark {
-    color: #1f2937; /* Fallback for text-dark */
+    color: #1F2937; /* Fallback, same as textDark */
   }
 
   .border-tertiary {
-    border-color: #d1d5db; /* Tailwind gray-300 */
+    border-color: #FFD97C; /* Matches tertiaryColor */
   }
 
   .bg-primary {
-    background-color: #3b82f6; /* Tailwind blue-500 */
+    background-color: #FAC94E; /* Matches primaryColor */
+  }
+
+  .bg-secondary {
+    background-color: #FACC59; /* Matches secondaryColor */
+  }
+
+  .bg-accent {
+    background-color: #EAB308; /* Matches accentColor */
+  }
+
+  .bg-blue-accent {
+    background-color: #3B82F6; /* Tailwind blue-500 for blue accents */
   }
 
   .shadow-soft {
@@ -80,13 +93,19 @@ footer {
     @apply mb-2;
   }
   .prose a {
-    @apply text-blue-600 hover:underline;
+    @apply text-blue-accent hover:underline;
   }
 }
 
 /* CSS variables */
 :root {
-  --primary: #1D4ED8; /* Tailwind blue-700 */
+  --primary: #FAC94E; /* Vibrant yellow */
+  --secondary: #FACC59; /* Light yellow */
+  --tertiary: #FFD97C; /* Pale yellow */
+  --accent: #EAB308; /* Dark yellow */
+  --blue-accent: #3B82F6; /* Tailwind blue-500 */
+  --blue-secondary: #2563EB; /* Tailwind blue-600 */
+  --blue-tertiary: #93C5FD; /* Tailwind blue-300 */
 }
 
 /* Custom Scrollbar */
@@ -95,16 +114,16 @@ footer {
 }
 
 ::-webkit-scrollbar-track {
-  background: #f1f5f9;
+  background: #F9FAFB; /* Matches backgroundLight */
 }
 
 ::-webkit-scrollbar-thumb {
-  background: linear-gradient(to bottom, #3b82f6, #8b5cf6);
+  background: linear-gradient(to bottom, #FAC94E, #EAB308); /* primaryColor to accentColor */
   border-radius: 10px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: linear-gradient(to bottom, #2563eb, #7c3aed);
+  background: linear-gradient(to bottom, #FACC59, #3B82F6); /* secondaryColor to blue-accent */
 }
 
 /* Smooth scrolling */
@@ -126,7 +145,7 @@ html {
 }
 
 .shadow-glow {
-  box-shadow: 0 10px 25px -3px rgba(59, 130, 246, 0.3), 0 4px 6px -2px rgba(59, 130, 246, 0.2);
+  box-shadow: 0 10px 25px -3px rgba(250, 201, 78, 0.3), 0 4px 6px -2px rgba(250, 201, 78, 0.2); /* Uses primaryColor */
 }
 
 .shadow-3xl {
@@ -135,31 +154,31 @@ html {
 
 /* Custom gradients */
 .bg-gradient-accent {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: linear-gradient(135deg, #FAC94E 0%, #3B82F6 100%); /* primaryColor to blue-accent */
 }
 
 .bg-gradient-primary {
-  background: linear-gradient(135deg, #3b82f6 0%, #8b5cf6 100%);
+  background: linear-gradient(135deg, #FAC94E 0%, #EAB308 100%); /* primaryColor to accentColor */
 }
 
 .bg-gradient-secondary {
-  background: linear-gradient(135deg, #8b5cf6 0%, #ec4899 100%);
+  background: linear-gradient(135deg, #FACC59 0%, #FFD97C 100%); /* secondaryColor to tertiaryColor */
 }
 
 .bg-gradient-warm {
-  background: linear-gradient(135deg, #f97316 0%, #ef4444 100%);
+  background: linear-gradient(135deg, #EAB308 0%, #3B82F6 100%); /* accentColor to blue-accent */
 }
 
 /* Text gradients */
 .text-gradient-primary {
-  background: linear-gradient(135deg, #3b82f6, #8b5cf6);
+  background: linear-gradient(135deg, #FAC94E, #EAB308); /* primaryColor to accentColor */
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
 }
 
 .text-gradient-secondary {
-  background: linear-gradient(135deg, #8b5cf6, #ec4899);
+  background: linear-gradient(135deg, #FACC59, #3B82F6); /* secondaryColor to blue-accent */
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -172,8 +191,8 @@ html {
 }
 
 @keyframes pulse-glow {
-  0%, 100% { box-shadow: 0 0 20px rgba(59, 130, 246, 0.4); }
-  50% { box-shadow: 0 0 40px rgba(59, 130, 246, 0.8); }
+  0%, 100% { box-shadow: 0 0 20px rgba(250, 201, 78, 0.4); } /* Uses primaryColor */
+  50% { box-shadow: 0 0 40px rgba(250, 201, 78, 0.8); }
 }
 
 @keyframes gradient-shift {
@@ -210,8 +229,23 @@ html {
 
 /* Custom button styles */
 .btn-primary {
-  background: linear-gradient(135deg, #3b82f6, #8b5cf6);
-  color: white;
+  background: linear-gradient(135deg, #FAC94E, #EAB308); /* primaryColor to accentColor */
+  color: #1F2937; /* textDark for contrast */
+  padding: 12px 32px;
+  border-radius: 12px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(250, 201, 78, 0.3);
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(250, 201, 78, 0.4);
+}
+
+.btn-secondary {
+  background: linear-gradient(135deg, #FACC59, #3B82F6); /* secondaryColor to blue-accent */
+  color: #1F2937; /* textDark for contrast */
   padding: 12px 32px;
   border-radius: 12px;
   font-weight: 600;
@@ -219,24 +253,9 @@ html {
   box-shadow: 0 4px 15px rgba(59, 130, 246, 0.3);
 }
 
-.btn-primary:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 8px 25px rgba(59, 130, 246, 0.4);
-}
-
-.btn-secondary {
-  background: linear-gradient(135deg, #8b5cf6, #ec4899);
-  color: white;
-  padding: 12px 32px;
-  border-radius: 12px;
-  font-weight: 600;
-  transition: all 0.3s ease;
-  box-shadow: 0 4px 15px rgba(139, 92, 246, 0.3);
-}
-
 .btn-secondary:hover {
   transform: translateY(-2px);
-  box-shadow: 0 8px 25px rgba(139, 92, 246, 0.4);
+  box-shadow: 0 8px 25px rgba(59, 130, 246, 0.4);
 }
 
 /* Custom focus states */
@@ -246,7 +265,7 @@ html {
 
 .focus-ring:focus {
   outline: none;
-  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+  box-shadow: 0 0 0 3px rgba(250, 201, 78, 0.1); /* Uses primaryColor */
 }
 
 /* Responsive typography */
@@ -275,8 +294,8 @@ html {
 .spinner {
   width: 20px;
   height: 20px;
-  border: 2px solid #f3f3f3;
-  border-top: 2px solid #3b82f6;
+  border: 2px solid #F9FAFB; /* Matches backgroundLight */
+  border-top: 2px solid #FAC94E; /* Matches primaryColor */
   border-radius: 50%;
   animation: spin 1s linear infinite;
 }
@@ -289,7 +308,7 @@ html {
 /* Enhanced form inputs */
 .input-enhanced {
   background: rgba(255, 255, 255, 0.1);
-  border: 1px solid rgba(255, 255, 255, 0.2);
+  border: 1px solid #FFD97C; /* Matches tertiaryColor */
   border-radius: 12px;
   padding: 12px 16px;
   transition: all 0.3s ease;
@@ -298,14 +317,14 @@ html {
 
 .input-enhanced:focus {
   outline: none;
-  border-color: #3b82f6;
+  border-color: #3B82F6; /* blue-accent */
   box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
   background: rgba(255, 255, 255, 0.15);
 }
 
 /* Custom selection */
 ::selection {
-  background: rgba(59, 130, 246, 0.2);
+  background: rgba(250, 201, 78, 0.2); /* Uses primaryColor */
   color: inherit;
 }
 
@@ -331,20 +350,14 @@ html {
 
 /* Ensure footer visibility on all screen sizes */
 footer input {
-  @apply bg-white text-gray-800 border-gray-300 rounded-md p-2 w-full;
+  @apply bg-white text-text-dark border-tertiary rounded-md p-2 w-full; /* Uses tertiaryColor */
 }
 
 footer button {
-  @apply bg-blue-500 hover:bg-blue-600 text-white rounded-md px-4 py-2 mt-2;
+  @apply bg-primary hover:bg-accent text-text-dark rounded-md px-4 py-2 mt-2; /* Uses primaryColor, accentColor, textDark */
 }
 
 /* Fix potential overflow issues in sections */
 section {
   @apply overflow-visible;
 }
-
-
-
-/* End of globals.css */
-
-

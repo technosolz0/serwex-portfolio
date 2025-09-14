@@ -33,7 +33,7 @@ export default function FAQ() {
       <SEO
         title="FAQ - Serwex"
         description="Answers to common questions about our apps."
-        canonicalUrl="https://yourdomain.com/faq"
+        canonicalUrl="https://serwex.in/faq"
       />
       <FAQClient items={items} />
     </>

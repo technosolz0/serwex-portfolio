@@ -18,7 +18,7 @@ export default async function Privacy() {
     return notFound();
   }
 
-  const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'https://yourdomain.com';
+  const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'https://serwex.in';
   const jsonLd = {
     '@context': 'https://schema.org',
     '@type': 'Organization',
