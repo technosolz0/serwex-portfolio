@@ -31,9 +31,9 @@ export default function Contact() {
               animate={{ x: 0, opacity: 1 }}
               transition={{ duration: 0.5, delay: 0.2 }}
             >
-              <p className="text-lg">Phone: +91-123-4567890 (placeholder)</p>
-              <p className="text-lg">Email: support@serwex.com (placeholder)</p>
-              <p className="text-lg">Address: HQ, City, India (placeholder)</p>
+              <p className="text-lg">Phone: +91-8080690161</p>
+              <p className="text-lg">Email: info@serwex.in</p>
+              {/* <p className="text-lg">Address: HQ, City, India (placeholder)</p> */}
             </motion.div>
           </div>
         </div>

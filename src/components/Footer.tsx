@@ -15,7 +15,7 @@ const Footer: React.FC = () => {
   };
 
   return (
-    <footer className="bg-gradient-accent text-white py-12 w-full">
+    <footer className="bg-gradient-accent2 text-white py-12 w-full">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-3 gap-8">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -23,7 +23,7 @@ const Footer: React.FC = () => {
           viewport={{ once: false }}
           transition={{ duration: 0.6, delay: 0.2 }}
         >
-          <h4 className="font-bold text-lg mb-4 text-gradient-primary">Serwex</h4>
+          <h4 className="font-bold text-lg mb-4 text-black">Serwex</h4>
           <p className="text-sm">Book trusted home services easily.</p>
         </motion.div>
 
@@ -34,7 +34,7 @@ const Footer: React.FC = () => {
           transition={{ duration: 0.6, delay: 0.4 }}
           aria-label="Footer Links"
         >
-          <h4 className="font-bold text-lg mb-4 text-gradient-primary">Links</h4>
+          <h4 className="font-bold text-lg mb-4 text-black">Links</h4>
           <ul className="space-y-2 text-sm">
             <li>
               <Link href="/about" className="hover:text-yellow-200 transition-colors">
@@ -57,6 +57,11 @@ const Footer: React.FC = () => {
               </Link>
             </li>
             <li>
+              <Link href="/refund" className="hover:text-yellow-200 transition-colors">
+                Refund Policy
+              </Link>
+            </li>
+            <li>
               <Link href="/guide/users" className="hover:text-yellow-200 transition-colors">
                 App Guide - Users
               </Link>
@@ -76,7 +81,7 @@ const Footer: React.FC = () => {
           transition={{ duration: 0.6, delay: 0.6 }}
           aria-label="Newsletter Subscription"
         >
-          <h4 className="font-bold text-lg mb-4 text-gradient-primary">Newsletter</h4>
+          <h4 className="font-bold text-lg mb-4 text-black">Newsletter</h4>
           <form onSubmit={handleSubscribe} className="flex flex-col items-start">
             <input
               type="email"

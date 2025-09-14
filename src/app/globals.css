@@ -137,6 +137,9 @@ html {
 .bg-gradient-accent {
   background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
 }
+.bg-gradient-accent2 {
+  background: linear-gradient(135deg, #FFD97C 0%, #EAB308 100%);
+}
 
 .bg-gradient-primary {
   background: linear-gradient(135deg, #3b82f6 0%, #8b5cf6 100%);
@@ -330,13 +333,13 @@ html {
 }
 
 /* Ensure footer visibility on all screen sizes */
-footer input {
+/* footer input {
   @apply bg-white text-gray-800 border-gray-300 rounded-md p-2 w-full;
 }
 
 footer button {
   @apply bg-blue-500 hover:bg-blue-600 text-white rounded-md px-4 py-2 mt-2;
-}
+} */
 
 /* Fix potential overflow issues in sections */
 section {

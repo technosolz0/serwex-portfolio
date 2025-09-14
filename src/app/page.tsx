@@ -737,7 +737,7 @@ export default function Home() {
 
             <motion.h1
               variants={itemVariants}
-              className="text-5xl sm:text-6xl lg:text-7xl font-black mb-8 leading-tight tracking-tight text-gradient-primary"
+              className="text-5xl sm:text-6xl lg:text-7xl font-black mb-8 leading-tight tracking-tight text-white"
             >
               Serwex
               <span className="block text-3xl sm:text-4xl lg:text-5xl font-bold mt-2 text-white/90">

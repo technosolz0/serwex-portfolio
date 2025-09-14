@@ -72,7 +72,7 @@ const FeatureCard: React.FC<FeatureCardProps> = ({ icon, title, description }) =
         
         {/* Title */}
         <motion.h3 
-          className="text-xl font-bold text-gray-800 mb-4 group-hover:text-gray-900 transition-colors duration-300"
+          className="text-xl font-bold text-black mb-4 group-hover:text-gray-900 transition-colors duration-300"
           layoutId="card-title"
         >
           {title}
