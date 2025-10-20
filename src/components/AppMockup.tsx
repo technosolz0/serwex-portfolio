@@ -178,7 +178,7 @@ const AppMockup: React.FC<AppMockupProps> = ({ screenshots }) => {
                 <motion.a
                   href={index === 0 
                     ? "https://play.google.com/store/apps/details?id=com.serwex.user"
-                    : "https://play.google.com/store/apps/details?id=com.serwex.partner"
+                    : "https://play.google.com/store/apps/details?id=com.serwex.serwex_partner"
                   }
                   target="_blank"
                   className="inline-flex items-center gap-2 mt-4 px-6 py-2 bg-white/10 backdrop-blur-sm text-white rounded-full text-sm font-medium hover:bg-white/20 transition-all duration-300"

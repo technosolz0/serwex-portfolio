@@ -190,7 +190,7 @@ export default function Home() {
               </motion.a>
 
               <motion.a
-                href="https://play.google.com/store/apps/details?id=com.serwex.partner"
+                href="https://play.google.com/store/apps/details?id=com.serwex.serwex_partner"
                 target="_blank"
                 className="btn-secondary relative group flex items-center justify-center gap-2"
                 whileHover={{ scale: 1.05 }}
@@ -421,7 +421,7 @@ export default function Home() {
               </motion.a>
 
               <motion.a
-                href="https://play.google.com/store/apps/details?id=com.serwex.partner"
+                href="https://play.google.com/store/apps/details?id=com.serwex.serwex_partner"
                 target="_blank"
                 className="btn-secondary flex items-center justify-center gap-2"
                 whileHover={{ scale: 1.05, y: -2 }}

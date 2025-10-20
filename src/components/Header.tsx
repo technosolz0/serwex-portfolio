@@ -36,7 +36,7 @@
 // //         </div>
 // //         <div className="hidden md:flex space-x-4">
 // //           <a href="https://play.google.com/store/apps/details?id=com.serwex.user" target="_blank" className="bg-primary text-white px-4 py-2 rounded hover:bg-accent transition-colors shadow-glow">Download Serwex</a>
-// //           <a href="https://play.google.com/store/apps/details?id=com.serwex.partner" target="_blank" className="bg-secondary text-white px-4 py-2 rounded hover:bg-tertiary transition-colors shadow-glow">Download Partner</a>
+// //           <a href="https://play.google.com/store/apps/details?id=com.serwex.serwex_partner" target="_blank" className="bg-secondary text-white px-4 py-2 rounded hover:bg-tertiary transition-colors shadow-glow">Download Partner</a>
 // //         </div>
 // //         <button className="md:hidden text-2xl hover:rotate-90 transition-transform" onClick={() => setIsMenuOpen(!isMenuOpen)}>
 // //           ☰
@@ -56,7 +56,7 @@
 // //         <Link href="/contact" className="block hover:text-primary transition-colors">Contact</Link>
 // //         <Link href="/faq" className="block hover:text-primary transition-colors">FAQ</Link>
 // //         <a href="https://play.google.com/store/apps/details?id=com.serwex.user" target="_blank" className="block bg-primary text-white px-4 py-2 rounded hover:bg-accent transition-colors">Download Serwex</a>
-// //         <a href="https://play.google.com/store/apps/details?id=com.serwex.partner" target="_blank" className="block bg-secondary text-white px-4 py-2 rounded hover:bg-tertiary transition-colors">Download Partner</a>
+// //         <a href="https://play.google.com/store/apps/details?id=com.serwex.serwex_partner" target="_blank" className="block bg-secondary text-white px-4 py-2 rounded hover:bg-tertiary transition-colors">Download Partner</a>
 // //       </motion.div>
 // //     </motion.header>
 // //   );
@@ -194,7 +194,7 @@
 //             </motion.a>
             
 //             <motion.a 
-//               href="https://play.google.com/store/apps/details?id=com.serwex.partner" 
+//               href="https://play.google.com/store/apps/details?id=com.serwex.serwex_partner" 
 //               target="_blank" 
 //               className="relative bg-gradient-to-r from-purple-500 to-purple-600 text-white px-6 py-2.5 rounded-full font-semibold hover:from-purple-600 hover:to-purple-700 transition-all duration-300 shadow-lg hover:shadow-xl group overflow-hidden"
 //               whileHover={{ scale: 1.05, y: -1 }}
@@ -275,7 +275,7 @@
 //                   </motion.a>
                   
 //                   <motion.a 
-//                     href="https://play.google.com/store/apps/details?id=com.serwex.partner" 
+//                     href="https://play.google.com/store/apps/details?id=com.serwex.serwex_partner" 
 //                     target="_blank" 
 //                     className="block bg-gradient-to-r from-purple-500 to-purple-600 text-white px-4 py-3 rounded-xl font-semibold text-center transition-all duration-300 hover:from-purple-600 hover:to-purple-700 shadow-lg"
 //                     initial={{ opacity: 0, y: 20 }}
@@ -383,7 +383,7 @@ const Header: React.FC = () => {
                 unoptimized
               />
               <motion.div
-                className="absolute -inset-2 bg-gradient-primary rounded-lg opacity-0 group-hover:opacity-100 -z-10"
+                className="absolute -inset-2 bg-gradient-accent2 rounded-lg opacity-0 group-hover:opacity-100 -z-10"
                 layoutId="logo-bg"
                 transition={{ duration: 0.2 }}
               />
@@ -426,7 +426,7 @@ const Header: React.FC = () => {
             </motion.a>
 
             <motion.a
-              href="https://play.google.com/store/apps/details?id=com.serwex.partner"
+              href="https://play.google.com/store/apps/details?id=com.serwex.serwex_partner"
               target="_blank"
               className="btn-secondary relative group flex items-center gap-2"
               whileHover={{ scale: 1.05, y: -1 }}
@@ -502,7 +502,7 @@ const Header: React.FC = () => {
                   </motion.a>
 
                   <motion.a
-                    href="https://play.google.com/store/apps/details?id=com.serwex.partner"
+                    href="https://play.google.com/store/apps/details?id=com.serwex.serwex_partner"
                     target="_blank"
                     className="block btn-secondary text-center"
                     initial={{ opacity: 0, y: 20 }}
