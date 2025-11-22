@@ -371,7 +371,7 @@ const ContactForm: React.FC = () => {
               >
                 <option value="">Select an option</option>
                 <option value="Serwex App">Serwex App</option>
-                <option value="Partner App">Partner App</option>
+                <option value="Partner App">Serwex Partner App</option>
               </select>
             </div>
             {errors.appType && (
