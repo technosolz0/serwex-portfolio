@@ -36,5 +36,5 @@ Keep your profile updated with accurate availability.
 Provide excellent customer service to earn 5-star ratings.
 
 Need Help?
-Contact our support team at support@serwex.com or use the in-app chat for assistance.
+Contact our support team at info@serwex.in or use the in-app chat for assistance.
 Last updated: September 11, 2025
