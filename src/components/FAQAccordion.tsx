@@ -6,15 +6,7 @@ import {
   useMotionValue,
   useTransform,
 } from "framer-motion";
-import {
-  ChevronDown,
-  Search,
-  HelpCircle,
-  Sparkles,
-  Filter,
-  X,
-  Star,
-} from "lucide-react";
+
 
 interface FAQItem {
   question: string;
@@ -24,19 +16,14 @@ interface FAQItem {
 
 interface FAQAccordionProps {
   items: FAQItem[];
-  searchable?: boolean;
-  categories?: string[];
 }
 
 const FAQAccordion: React.FC<FAQAccordionProps> = ({
   items,
-  searchable = true,
-  categories = [],
 }) => {
   const [openIndex, setOpenIndex] = useState<number | null>(null);
   const [searchQuery, setSearchQuery] = useState("");
   const [selectedCategory, setSelectedCategory] = useState<string>("all");
-  const [isSearchFocused, setIsSearchFocused] = useState(false);
 
   const mouseX = useMotionValue(0);
   const mouseY = useMotionValue(0);
@@ -61,11 +48,6 @@ const FAQAccordion: React.FC<FAQAccordionProps> = ({
 
   const toggleAccordion = (index: number) => {
     setOpenIndex(openIndex === index ? null : index);
-  };
-
-  const clearSearch = () => {
-    setSearchQuery("");
-    setSelectedCategory("all");
   };
 
   const handleMouseMove = (event: React.MouseEvent) => {
