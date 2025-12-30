@@ -20,13 +20,15 @@ Serwex (“we,” “our,” or “us”) values your trust and respects your pr
 ## 2. Information We Collect
 - **Personal Information**: Name, phone number, email, address, payment details.  
 - **Service Information**: Service bookings, preferences, feedback.  
+- **Location Data**: We collect your device’s precise location to connect you with nearby service providers, calculate accurate service charges, and ensure timely service delivery to your doorstep.  
 - **Device Information**: IP address, device type, browser, app usage logs.  
 - **Cookies & Tracking**: To enhance user experience and improve our platform.
 
 ---
 
 ## 3. How We Use Your Information
-- To provide and manage services.  
+- To provide and manage services. 
+- To locate your position and show available service providers in your vicinity. 
 - To process payments securely.  
 - To improve services and personalize user experience.  
 - To communicate booking details, offers, and updates.  
