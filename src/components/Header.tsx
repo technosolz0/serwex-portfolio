@@ -112,7 +112,6 @@ const Header: React.FC = () => {
             ))}
           </div>
 
-          {/* Desktop CTA Buttons */}
           <div className="hidden lg:flex items-center space-x-4">
             <motion.a
               href="https://play.google.com/store/apps/details?id=com.serwex.userapp"
