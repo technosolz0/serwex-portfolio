@@ -186,7 +186,7 @@ const Header: React.FC = () => {
 
                 <div className="pt-4 border-t border-tertiary space-y-3">
                   <motion.a
-                    href="https://play.google.com/store/apps/details?id=com.serwex.user"
+                    href="https://play.google.com/store/apps/details?id=com.serwex.userapp"
                     target="_blank"
                     className="block btn-primary text-center"
                     initial={{ opacity: 0, y: 20 }}

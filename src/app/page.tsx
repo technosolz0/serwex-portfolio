@@ -177,7 +177,7 @@ export default function Home() {
               className="flex flex-col sm:flex-row justify-center gap-6 mb-16"
             >
               <motion.a
-                href="https://play.google.com/store/apps/details?id=com.serwex.user"
+                href="https://play.google.com/store/apps/details?id=com.serwex.userapp"
                 target="_blank"
                 className="btn-primary relative group flex items-center justify-center gap-2"
                 whileHover={{ scale: 1.05 }}
@@ -410,7 +410,7 @@ export default function Home() {
 
             <motion.div className="flex flex-col sm:flex-row gap-6 justify-center">
               <motion.a
-                href="https://play.google.com/store/apps/details?id=com.serwex.user"
+                href="https://play.google.com/store/apps/details?id=com.serwex.userapp"
                 target="_blank"
                 className="btn-primary flex items-center justify-center gap-2"
                 whileHover={{ scale: 1.05, y: -2 }}

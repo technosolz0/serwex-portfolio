@@ -177,7 +177,7 @@ const AppMockup: React.FC<AppMockupProps> = ({ screenshots }) => {
                 {/* Download button */}
                 <motion.a
                   href={index === 0 
-                    ? "https://play.google.com/store/apps/details?id=com.serwex.user"
+                    ? "https://play.google.com/store/apps/details?id=com.serwex.userapp"
                     : "https://play.google.com/store/apps/details?id=com.serwex.serwex_partner"
                   }
                   target="_blank"
