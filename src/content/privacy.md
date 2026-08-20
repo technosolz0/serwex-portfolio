@@ -80,6 +80,6 @@ We may update this policy from time to time. Any changes will be reflected here 
 
 For questions about this policy, contact us:
 
-- **Email:** info@serwex.in
+- **Email:** serwex.in@gmail.com
 - **Phone:** +91-8080690161
 <!-- - **Address:** [Your Business Address]   -->

@@ -65,6 +65,6 @@ These terms are governed by the laws of India.
 
 ## 11. Contact Us
 For questions, contact us:  
-- **Email:** info@serwex.in  
+- **Email:** serwex.in@gmail.com  
 - **Phone:** +91-8080690161  
 <!-- - **Address:** [Your Business Address]   -->

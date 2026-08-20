@@ -81,6 +81,6 @@ These Terms & Conditions are governed by and construed in accordance with the la
 
 For questions regarding these Terms & Conditions or partner support, please reach out to us:
 
-- **Email**: info@serwex.in / support@thelifetrackr.com
+- **Email**: serwex.in@gmail.com
 - **Phone**: +91-8080690161
 - **App**: Serwex Partner Support Section

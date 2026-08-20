@@ -74,7 +74,7 @@ export async function POST(request: Request) {
     // -----------------------------
     await transporter.sendMail({
       from: `"Serwex Contact" <${process.env.SMTP_USER}>`,
-      to: process.env.SMTP_TO || "info@serwex.in",
+      to: process.env.SMTP_TO || "serwex.in@gmail.com",
       replyTo: email,
       subject: `New Contact: ${name}`,
       text: message,

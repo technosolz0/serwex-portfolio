@@ -34,5 +34,5 @@ To become India’s most trusted service marketplace where customers feel confid
 
 At Serwex, we’re not just providing services we’re building **trust** and making your life easier, one booking at a time.  
 
-📩 For inquiries: **info@serwex.in**  
+📩 For inquiries: **serwex.in@gmail.com**  
 📞 +91-8080690161  

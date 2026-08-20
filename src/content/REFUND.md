@@ -50,7 +50,7 @@ At Serwex, we strive to provide high-quality services to our customers. However,
 ## 8. Contact Us
 If you have any questions about this policy, please contact us:  
 
-- **Email:** info@serwex.in  
+- **Email:** serwex.in@gmail.com  
 - **Phone:** +91-8080690161  
 <!-- - **Address:** [Your Business Address]   -->
 
