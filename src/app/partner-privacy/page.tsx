@@ -1,4 +1,6 @@
-import PartnerPrivacy, { dynamic, revalidate } from '../partner/privacy/page';
+import PartnerPrivacy from '../partner/privacy/page';
 
-export { dynamic, revalidate };
+export const dynamic = 'force-static';
+export const revalidate = 3600;
+
 export default PartnerPrivacy;

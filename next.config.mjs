@@ -1,7 +1,16 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   images: {
-    domains: ['play.google.com', 'your-image-host.com'], // Add for external images
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'play.google.com',
+      },
+      {
+        protocol: 'https',
+        hostname: 'your-image-host.com',
+      },
+    ],
   },
 };
 

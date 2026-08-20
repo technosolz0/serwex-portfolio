@@ -1,4 +1,6 @@
-import PartnerTerms, { dynamic, revalidate } from '../partner/terms/page';
+import PartnerTerms from '../partner/terms/page';
 
-export { dynamic, revalidate };
+export const dynamic = 'force-static';
+export const revalidate = 3600;
+
 export default PartnerTerms;
